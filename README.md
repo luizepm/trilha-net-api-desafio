@@ -56,3 +56,14 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
 
 ## Solução
 O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+
+Instalar comandos EF Vs Code
+dotnet tool install --global dotnet-ef
+
+Na aplicação
+dotnet add package microsoft.entityframeworkcore.design
+dotnet add package microsoft.entityframeworkcore.sqlserver
+
+Comandos para Db EF
+dotnet-ef migrations add CriacaoTabelaTarefa
+dotnet-ef database update
